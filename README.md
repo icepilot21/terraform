@@ -41,30 +41,20 @@
 placeholder
 
 ## Installation
-# On RHEL 8:
+On RHEL 8:
 ```
 sudo yum -y install yum-utils
 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 sudo yum -y update
 sudo yum -y install terraform
 ```
-# Test to ensure that it installed correctly
+Test to ensure that it installed correctly
 ```
 terraform -help
 ```
-# Enable tab completion
+Enable tab completion
 ```
 touch ~/.bashrc
 terraform -install-autocomplete
 bash -l
 ```
-
-## Getting Started
-terraform init
-terraform plan
-# Deploy the plan
-terraform apply
-# Destroy the plan
-terraform destroy
-# List providers
-terraform providers
